@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #137f80;
+}
+
+button:focus {
+  outline: 0;
+}
+
+#site-wrapper {
+  width: 100vw;
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  #site-wrapper {
+    display: block;
+  }
+}
+
+/* Menu */
+#menu-wrapper {
+  width: 15vw;
+  background-color: #37334e;
+}
+
+@media only screen and (max-width: 1200px) {
+  #menu-wrapper {
+    width: 20vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #menu-wrapper {
+    width: 100vw;
+  }
+}
+
+#menu {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.menu-top {
+  background-color: #137f80;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.menu-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-content {
+    padding-bottom: 20px;
+  }
+}
+
+.score {
+  margin: 16px 0;
+}
+
+.attempts {
+  margin: 0 0 16px;
+}
+
+.action-button {
+  width: 90%;
+  margin: auto;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #50a2a9;
+  padding: 15px;
+  border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .action-button {
+    width: 60%;
+  }
+}
+
+.action-button:active {
+  transform: scale(0.98);
+  transition: transform 0.15s;
+}
+
+.action-button:hover {
+  cursor: pointer;
+  background-color: #49989e;
+}
+
+/* Game */
+#game-wrapper {
+  width: 40vw;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  perspective: 1000px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1500px) {
+  #game-wrapper {
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #game-wrapper {
+    width: 65vw;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #game-wrapper {
+    width: 70vw;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #game-wrapper {
+    margin: 20px auto;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #game-wrapper {
+    width: 90vw;
+    height: 500px;
+  }
+}
+
+.card {
+  position: relative;
+  margin: 7px;
+  width: calc(25% - 14px);
+  height: calc(25% - 14px);
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  user-select: none;
+}
+
+.card:active {
+  transform: scale(0.96);
+  transition: transform 0.15s;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #37334e;
+  backface-visibility: hidden;
+}
+
+@media only screen and (max-width: 700px) {
+  .card-front,
+  .card-back {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .card-front,
+  .card-back {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .card-front,
+  .card-back {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .card-front,
+  .card-back {
+    padding: 10px;
+  }
+}
+
+.card-front {
+  background-color: #50a2a9;
+  transform: rotateY(180deg);
+}

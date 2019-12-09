@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Memory Game</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Icons made by https://www.flaticon.com/authors/freepik -->
+
+    <div id="site-wrapper">
+      <section id="menu-wrapper">
+        <div id="menu">
+          <div class="menu-top">Memory Game</div>
+
+          <div class="menu-content">
+            <p class="score">Score: <span class="score-amount">0</span>/8</p>
+            <p class="attempts">
+              Attempts: <span class="attempts-amount">0</span>
+            </p>
+            <button type="button" class="action-button" onClick="resetGame()">
+              Reset Game
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="game-wrapper">
+        <div class="card">
+          <img class="card-front" src="img/chicken.svg" alt="chicken" />
+          <img class="card-back" src="img/question.svg" alt="question mark" />
+        </div>
+        <div class="card">
+          <img class="card-front" src="img/chicken.svg" alt="chicken" />
+          <img class="card-back" src="img/question.svg" alt="question mark" />
+        </div>
+        <div class="card">
+          <img class="card-front" src="img/deer.svg" alt="deer" />
+          <img class="card-back" src="img/question.svg" alt="question mark" />
+        </div>
+        <div class="card">
+          <img class="card-front" src="img/deer.svg" alt="deer" />
+          <img class="card-back" src="img/question.svg" alt="question mark" />
+        </div>
+        <div class="card">
+          <img class="card-front" src="img/eagle.svg" alt="eagle" />
+          <img class="card-back" src="img/question.svg" alt="question mark" />
+        </div>
+        <div class="card">
+          <img class="card-front" src="img/eagle.svg" alt="eagle" />
+          <img class="card-back" src="img/question.svg" alt="question mark" />
+        </div>
+        <div class="card">
+          <img class="card-front" src="img/pig.svg" alt="pig" />
+          <img class="card-back" src="img/question.svg" alt="question mark" />
+        </div>
+        <div class="card">
+          <img class="card-front" src="img/pig.svg" alt="pig" />
+          <img class="card-back" src="img/question.svg" alt="question mark" />
+        </div>
+        <div class="card">
+          <img class="card-front" src="img/rabbit.svg" alt="rabbit" />
+          <img class="card-back" src="img/question.svg" alt="question mark" />
+        </div>
+        <div class="card">
+          <img class="card-front" src="img/rabbit.svg" alt="rabbit" />
+          <img class="card-back" src="img/question.svg" alt="question mark" />
+        </div>
+        <div class="card">
+          <img class="card-front" src="img/scorpion.svg" alt="scorpion" />
+          <img class="card-back" src="img/question.svg" alt="question mark" />
+        </div>
+        <div class="card">
+          <img class="card-front" src="img/scorpion.svg" alt="scorpion" />
+          <img class="card-back" src="img/question.svg" alt="question mark" />
+        </div>
+        <div class="card">
+          <img class="card-front" src="img/dolphin.svg" alt="dolphin" />
+          <img class="card-back" src="img/question.svg" alt="question mark" />
+        </div>
+        <div class="card">
+          <img class="card-front" src="img/dolphin.svg" alt="dolphin" />
+          <img class="card-back" src="img/question.svg" alt="question mark" />
+        </div>
+        <div class="card">
+          <img class="card-front" src="img/camel.svg" alt="camel" />
+          <img class="card-back" src="img/question.svg" alt="question mark" />
+        </div>
+        <div class="card">
+          <img class="card-front" src="img/camel.svg" alt="camel" />
+          <img class="card-back" src="img/question.svg" alt="question mark" />
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
